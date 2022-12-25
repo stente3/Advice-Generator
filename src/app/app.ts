@@ -1,5 +1,4 @@
-import 'normalize.css';
-import './app.css';
+import '../sass/app.scss';
 
 const root = document.querySelector('#app');
 let card: Element | null = document.createElement('div');
