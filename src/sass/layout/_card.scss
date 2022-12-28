@@ -1,8 +1,23 @@
 .card {
 	display: flex;
-	width: 25%;
+	width: 40%;
 	margin: 0 auto;
 	padding: 1rem;
-	justify-content: center;
+	align-items: center;
+	text-align: center;
 	background-color: $mainColor;
+	flex-direction: column;
+}
+.image{
+	width: 85%;
+}
+/* Mobile Design */
+
+@media screen and (max-width: 375px) {
+	.card{
+		width: 90%;
+	}
+	.image{
+		width: 90%;
+	}
 }
