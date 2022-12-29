@@ -1,6 +1,6 @@
 .card {
 	display: flex;
-	width: 40%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 1rem;
 	align-items: center;
@@ -8,16 +8,16 @@
 	background-color: $mainColor;
 	flex-direction: column;
 }
-.image{
-	width: 85%;
+.image {
+	width: 90%;
 }
-/* Mobile Design */
 
-@media screen and (max-width: 375px) {
-	.card{
-		width: 90%;
+/* Desktop design */
+@include desktop {
+	.card {
+		width: 45%;
 	}
-	.image{
-		width: 90%;
+	.image {
+		width: 85%;
 	}
 }
