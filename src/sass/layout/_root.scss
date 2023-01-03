@@ -4,6 +4,8 @@
 	width: 100vw;
 	margin: 0 auto;
 	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	background-color: $bgColor;
 	color: $textColor
 }

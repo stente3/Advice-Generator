@@ -1,0 +1,15 @@
+.button{
+    position: relative;
+    bottom: -58px;
+    background-image: url("/src/images/icon-dice.svg");
+    padding: 30px;
+    border: 2px solid $idColor;
+    border-radius: 50%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $idColor;
+}
+.button:hover{
+    filter: drop-shadow(0 0 1rem $idColor);
+}
