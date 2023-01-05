@@ -1,7 +1,7 @@
 import '../sass/app.scss';
-import card from '../components/card';
+import Card from '../components/card';
 
 /* Creacion de elementos */
 const root = document.querySelector('#app');
 root?.classList.add('root');
-root?.appendChild(card);
+root?.appendChild(await Card());

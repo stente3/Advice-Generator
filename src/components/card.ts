@@ -2,20 +2,34 @@ import api from '../services/api';
 import divisorDesktop from '../images/pattern-divider-desktop.svg';
 import divisorMobile from '../images/pattern-divider-mobile.svg';
 
-let apiMessage = await api();
-let message = apiMessage.slip.advice;
-let id = apiMessage.slip.id;
+interface Advice {
+	advice: string;
+	id: number;
+}
 
-const card = document.createElement('div');
-card.classList.add('card');
-card.innerHTML = `
-    <p class="id">ADVICE #${id}</p>
-    <p>${message}</p>
+async function Card(): Promise<Element> {
+	let service = await apiData();
+	const card = document.createElement('div');
+	childRemover(card);
+	card.classList.add('card');
+	card.innerHTML = `
+    <p class="id">ADVICE #${service.id}</p>
+    <p>"${service.advice}"</p>
     <img src="${divisorImage()}" class="image">
     <button class="button"></button>
 `;
+	return card;
+}
 
-/* Comprobacion de la resolucion */
+/* Consulta los datos a la API y retorna los datos que necesitan ser mostrados */
+async function apiData(): Promise<Advice> {
+	let apiMessage = await api();
+	let { advice, id } = apiMessage.slip;
+	return { advice, id };
+}
+
+/* Utilities */
+// Comprobacion de la resolucion
 function divisorImage() {
 	if (screen.width > 375) {
 		return divisorDesktop;
@@ -24,4 +38,11 @@ function divisorImage() {
 	}
 }
 
-export default card;
+// Elimina todos los hijos del elemento dado
+function childRemover(parent: Element) {
+	while (parent.firstChild) {
+		parent.removeChild(parent.firstChild);
+	}
+}
+
+export default Card;
