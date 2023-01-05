@@ -5,22 +5,27 @@
 	padding: 3rem;
 	align-items: center;
 	text-align: center;
+	line-height: 3rem;
 	color: $textColor;
 	background-color: $mainColor;
 	flex-direction: column;
 	border-radius: 4%;
 }
 .image {
-	width: 90%;
+	position: relative;
+	top: 20px;
+	width: 100%;
 }
 .id{
+	font-size: 1.4rem;
+	letter-spacing: 0.4rem;
 	color: $idColor
 }
 
 /* Desktop design */
 @include desktop {
 	.card {
-		width: 30%;
+		width: 32%;
 		border-radius: 4%;
 	}
 	.image {

@@ -10,7 +10,7 @@ const card = document.createElement('div');
 card.classList.add('card');
 card.innerHTML = `
     <p class="id">ADVICE #${id}</p>
-    <p>${message}</p>
+    <p>"${message}"</p>
     <img src="${divisorImage()}" class="image">
     <button class="button"></button>
 `;
