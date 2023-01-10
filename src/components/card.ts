@@ -31,11 +31,7 @@ async function apiData(): Promise<Advice> {
 /* Utilities */
 // Comprobacion de la resolucion
 function divisorImage() {
-	if (screen.width > 375) {
-		return divisorDesktop;
-	} else {
-		return divisorMobile;
-	}
+	return screen.width > 375 ? divisorDesktop : divisorMobile;
 }
 
 // Elimina todos los hijos del elemento dado
