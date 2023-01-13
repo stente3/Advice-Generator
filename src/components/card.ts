@@ -20,6 +20,7 @@ cardImage.classList.add('image');
 function button() {
 	let button = document.createElement('button');
 	button.classList.add('button');
+	button.addEventListener('click', changeContent);
 	return button;
 }
 
@@ -49,6 +50,12 @@ async function apiData(): Promise<Advice> {
 // Comprobacion de la resolucion
 function divisorImage() {
 	return screen.width > 375 ? divisorDesktop : divisorMobile;
+}
+// Remplaza el consejo, por uno nuevo
+async function changeContent() {
+	let { id, advice }: Advice = await apiData();
+	cardId.textContent = `ADVICE #${id}`;
+	cardAdvice.textContent = `"${advice}"`;
 }
 
 export default Card;
