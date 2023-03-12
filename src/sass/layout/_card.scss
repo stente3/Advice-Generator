@@ -1,20 +1,23 @@
 .card {
 	display: flex;
+	position: relative;
 	width: 90%;
 	margin: 0 auto;
-	padding: 3rem;
+	padding: 3rem 3rem 5rem 3rem;
 	align-items: center;
 	text-align: center;
 	color: $textColor;
 	background-color: $mainColor;
 	flex-direction: column;
-	border-radius: 4%;
+	border-radius: 1rem;
+	aspect-ratio: 1.5 1;
+	max-width: $mobile;
 }
 .image {
 	width: 90%;
 }
-.id{
-	color: $idColor
+.id {
+	color: $idColor;
 }
 
 /* Desktop design */
