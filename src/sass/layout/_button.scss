@@ -1,6 +1,6 @@
 .button {
 	position: absolute;
-	bottom: -15%;
+	bottom: -16%;
 	background-image: url('/src/images/icon-dice.svg');
 	padding: 30px;
 	border: 2px solid $idColor;
@@ -12,4 +12,9 @@
 }
 .button:hover {
 	filter: drop-shadow(0 0 1rem $idColor);
+}
+@include desktop {
+	.button {
+		bottom: -15%;
+	}
 }

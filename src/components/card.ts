@@ -14,6 +14,7 @@ const cardImage = document.createElement('img');
 
 card.classList.add('card');
 cardId.classList.add('id');
+cardAdvice.classList.add('advice');
 cardImage.classList.add('image');
 
 // Button

@@ -13,18 +13,35 @@
 	aspect-ratio: 1.5 1;
 	max-width: $mobile;
 }
+.advice {
+	font-size: 1.8rem;
+	width: 100%;
+}
 .image {
 	width: 90%;
 }
 .id {
+	font-size: 1.4rem;
 	color: $idColor;
 }
 
 /* Desktop design */
 @include desktop {
+	p {
+		margin: 0 auto;
+	}
+	.advice {
+		font-size: 2.5rem;
+	}
+	.id {
+		font-size: 1.5rem;
+	}
 	.card {
-		width: 30%;
-		border-radius: 4%;
+		//width: 30%;
+		aspect-ratio: 2.5 / 1.4;
+		font-size: 2.4rem;
+		max-width: 43.4rem;
+		justify-content: space-around;
 	}
 	.image {
 		width: 100%;
