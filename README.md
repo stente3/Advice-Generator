@@ -35,10 +35,12 @@ This is a challenge taken from the "Frontend Mentor" website, it was made with t
 * [Vite](https://vitejs.dev/)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+* [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Mobile frist](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first)
 * [Relative Units](https://www.w3schools.com/cssref/css_units.asp)
 * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+
 
 
 
